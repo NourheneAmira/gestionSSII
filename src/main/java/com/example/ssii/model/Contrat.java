@@ -13,8 +13,8 @@ import java.util.Date;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name = "contart")
-public class Contart implements Serializable {
+@Table(name = "contrat")
+public class Contrat implements Serializable {
     @Id
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int reference;
@@ -29,6 +29,7 @@ public class Contart implements Serializable {
     private String typeContrat;
     @Column(name = "salaire")
     private float salaire;
-
+    @OneToOne
+    private Employe employe;
 
 }

@@ -1,11 +1,10 @@
-package tn.esprit.spring.repository;
+package com.example.ssii.repository;
 
-import org.springframework.data.repository.CrudRepository;
 
-import tn.esprit.spring.entities.Employe;
-import tn.esprit.spring.entities.Entreprise;
+import com.example.ssii.model.Entreprise;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface EntrepriseRepository extends CrudRepository<Entreprise, Integer>  {
+public interface EntrepriseRepository extends JpaRepository<Entreprise, Integer> {
 	
 	
 }

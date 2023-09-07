@@ -1,10 +1,9 @@
-package tn.esprit.spring.repository;
-
-import org.springframework.data.repository.CrudRepository;
-
-import tn.esprit.spring.entities.Mission;
+package com.example.ssii.repository;
 
 
-public interface MissionRepository extends CrudRepository<Mission, Integer> {
+import com.example.ssii.model.Mission;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface MissionRepository extends JpaRepository<Mission, Integer> {
 
 }

@@ -1,9 +1,9 @@
-package tn.esprit.spring.repository;
+package com.example.ssii.repository;
 
-import org.springframework.data.repository.CrudRepository;
 
-import tn.esprit.spring.entities.Departement;
+import com.example.ssii.model.Departement;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface DepartementRepository extends CrudRepository<Departement, Integer>{
+public interface DepartementRepository extends JpaRepository<Departement, Integer> {
 
 }
